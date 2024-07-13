@@ -11,6 +11,7 @@ import AuthorPage from './Pages/ProfilePage/Profile'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import PostPage from './Pages/PostPage/PostPage'
 import MostLikedPost from './Pages/MostLikedPost/MostLikedPost'
+import Login from './Pages/Login/Login'
 import NavigationBar from './components/NavBar/NavigationBar'
 import Footer from './components/Footer/Footer'
 
@@ -21,6 +22,7 @@ function App() {
         <NavigationBar />
         <Switch>
           <Route exact path="/" component={Body} />
+          <Route exact path="/Login" component={Login} />
           <Route exact path="/MostLikedPost" component={MostLikedPost} />
           <Route exact path="/MostCommentPost" component={MostLikedPost} />
           <Route exact path="/:pageNo" component={Body} />

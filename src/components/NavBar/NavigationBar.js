@@ -94,6 +94,21 @@ function NavigationBar() {
                 </p>
               </Link>
             </NavItem>
+
+            <NavItem>
+              <Link to="/Login" onClick={toggle}>
+                <p
+                  className={` m-2 ${
+                    pathName.split('/')[1] === 'Login'
+                      ? 'text-white'
+                      : 'text-secondary'
+                  }`}
+                >
+                  {' '}
+                  Login
+                </p>
+              </Link>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
